@@ -5,21 +5,21 @@
 class Traceme < Formula
   desc "Local activity logger: periodic screenshots → Vision LLM → JSONL"
   homepage "https://github.com/gtn1024/traceme"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/gtn1024/traceme/releases/download/v0.1.0/traceme_0.1.0_darwin_amd64.tar.gz"
-    sha256 "8d64fa5757d143735d995683214ce0c21081377260cdd00ba936529fccb6dab5"
+    url "https://github.com/gtn1024/traceme/releases/download/v0.2.0/traceme_0.2.0_darwin_amd64.tar.gz"
+    sha256 "918e9b2f454569b405a35789e2803aff4070dc372ccd9c62de12f2cc8c36b57c"
 
     define_method(:install) do
       bin.install "traceme"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/gtn1024/traceme/releases/download/v0.1.0/traceme_0.1.0_darwin_arm64.tar.gz"
-    sha256 "cf632cedf6c2f916931e4eefd33e03bc2ea2c99acd3d118b57ea7d8cc09d42ba"
+    url "https://github.com/gtn1024/traceme/releases/download/v0.2.0/traceme_0.2.0_darwin_arm64.tar.gz"
+    sha256 "633d26d4aca25f2657be6f6ddf6520fb95feb5c4e8f1105a7e166b688dd890c1"
 
     define_method(:install) do
       bin.install "traceme"
