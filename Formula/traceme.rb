@@ -11,7 +11,7 @@ class Traceme < Formula
 
   if Hardware::CPU.intel?
     url "https://github.com/gtn1024/traceme/releases/download/v0.2.0/traceme_0.2.0_darwin_amd64.tar.gz"
-    sha256 "918e9b2f454569b405a35789e2803aff4070dc372ccd9c62de12f2cc8c36b57c"
+    sha256 "eb0d6b95bbfc319264582fa96ffeba61c02a1f82dc7795858f102cbf213e7553"
 
     define_method(:install) do
       bin.install "traceme"
@@ -19,7 +19,7 @@ class Traceme < Formula
   end
   if Hardware::CPU.arm?
     url "https://github.com/gtn1024/traceme/releases/download/v0.2.0/traceme_0.2.0_darwin_arm64.tar.gz"
-    sha256 "633d26d4aca25f2657be6f6ddf6520fb95feb5c4e8f1105a7e166b688dd890c1"
+    sha256 "4ce09752ba249af7ade7f0913611512d5ef4624dc55490929efeead98f10ab64"
 
     define_method(:install) do
       bin.install "traceme"
