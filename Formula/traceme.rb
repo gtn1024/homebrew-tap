@@ -10,16 +10,16 @@ class Traceme < Formula
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/gtn1024/traceme/releases/download/v0.1.0/traceme_0.1.0_darwin_amd64"
-    sha256 "30420da735e54230ce72ca9f03c64c04d66c0fcac6061043bdfc6c7bf7af31eb"
+    url "https://github.com/gtn1024/traceme/releases/download/v0.1.0/traceme_0.1.0_darwin_amd64.tar.gz"
+    sha256 "8d64fa5757d143735d995683214ce0c21081377260cdd00ba936529fccb6dab5"
 
     define_method(:install) do
       bin.install "traceme"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/gtn1024/traceme/releases/download/v0.1.0/traceme_0.1.0_darwin_arm64"
-    sha256 "1dd68565f523b423ce871cdeccf8b5ce293ff860f8d11240d1ad2ccadeec1200"
+    url "https://github.com/gtn1024/traceme/releases/download/v0.1.0/traceme_0.1.0_darwin_arm64.tar.gz"
+    sha256 "cf632cedf6c2f916931e4eefd33e03bc2ea2c99acd3d118b57ea7d8cc09d42ba"
 
     define_method(:install) do
       bin.install "traceme"
